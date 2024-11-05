@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- RangeSlider CSS file -->
+    <link type="text/css" rel="stylesheet" href="css/global.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/media.css" media="screen,projection"/>
+    <link rel="stylesheet" href="ion.rangeSlider-2.1.4/css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="ion.rangeSlider-2.1.4/css/ion.rangeSlider.skinFlat.css">
+    <link rel="stylesheet" href="ion.rangeSlider-2.1.4/css/custom.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col s2">
+
+                <ul id="slide-out" class="side-nav white-text left-swipe">
+
+                    <li>
+                        <div class="userView center-align">
+                            <div class="background">
+                                <img src="img/left-swipe-shadow.png">
+                            </div>
+
+                            <div class="row no-mar">
+                                <div class="col s6 no-pad left-align">
+                                    <a class="log-out" href=""><img class="exit icon-swipe" src="img/exit.svg" onerror="this.onerror=null; this.src='exit.png'" alt="messages">
+                                        <span class="exit white-text">Выход</span></a>
+                                </div>
+
+                                <div class="col s6 no-pad right-align">
+                                    <a class="close click itemclick">
+                                        <!--<img class="close icon-swipe" src="img/close.svg" onerror="this.onerror=null; this.src='close.png'" alt="close">-->
+                                        <i class="zmdi zmdi-close white-text"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <a href="profile.html"><img class="circle center-block sanko_143" src="img/sanko_143.png"></a>
+                            <a href="profile.html"><span class="white-text name">Денис Санько</span></a>
+
+                            <div class="links-to-cat row no-mar">
+                                <div class="col s4 center-align no-pad">
+                                    <a href="messages.html"><img class="env icon-swipe" src="img/env.svg" onerror="this.onerror=null; this.src='env.png'" alt="messages">
+                                        <span class="qty">2</span></a>
+                                </div>
+
+                                <div class="col s4 center-align no-pad">
+                                    <a href="calendar.html"><img class="calendar-icon icon-swipe" src="img/calendar-icon.svg" onerror="this.onerror=null; this.src='calendar-icon.png'" alt="calengar">
+                                        <span class="qty">4</span></a>
+                                </div>
+
+                                <div class="col s4 center-align no-pad">
+                                    <a href=""><img class="timer-icon icon-swipe" src="img/timer-icon.svg" onerror="this.onerror=null; this.src='timer-icon.png'" alt="time">
+                                        <span class="qty">3</span></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <ul class="collapsible" data-collapsible="accordion">
+
+                            <li  class="plans">
+                                <div class="collapsible-header">Планирование
+                                    <i class="fa fa-angle-right white-text" aria-hidden="true"></i><span class="tag white-text">4</span></div>
+                                <div class="collapsible-body">
+                                    <a href="calendar.html">Календарь <span class="tag plans white-text">4</span></a>
+                                    <div class="divider"></div>
+                                    <a href="tasks.html">Поручения</a>
+                                    <div class="divider"></div>
+                                    <a href="result.html">Результативность</a>
+                                </div>
+                            </li>
+
+                            <li class="communication">
+                                <div class="collapsible-header">Общение
+                                    <i class="fa fa-angle-right white-text" aria-hidden="true"></i><span class="tag white-text">4</span></div>
+                                <div class="collapsible-body">
+                                    <a href="messages.html">Сообщения<span class="tag communication white-text">4</span></a>
+                                    <div class="divider"></div>
+                                    <a href="forum.html">Форум</a>
+                                    <div class="divider"></div>
+                                    <a href="questionnaires.html">Опросы</a>
+                                    <div class="divider"></div>
+                                    <a href="support.html">Поддержка (заявки)</a>
+                                    <div class="divider"></div>
+                                    <a href="situation.html">Сообщить о ЧС</a>
+                                </div>
+                            </li>
+
+                            <li class="rating">
+                                <div class="collapsible-header">Оценка
+                                    <i class="fa fa-angle-right white-text" aria-hidden="true"></i></div>
+
+                                <div class="collapsible-body">
+                                    <a href="competence.html">Компетенции</a>
+                                    <div class="divider"></div>
+                                    <a href="thanks.html">Благодарности</a>
+                                    <div class="divider"></div>
+                                    <a href="standards.html">Стандарты</a>
+                                </div>
+                            </li>
+
+                            <li class="f-a-q">
+                                <div class="collapsible-header">База знаний
+                                    <i class="fa fa-angle-right white-text" aria-hidden="true"></i><span class="tag white-text">2</span></div>
+                                <div class="collapsible-body">
+                                    <a href="base.html">База знаний</a>
+                                    <div class="divider"></div>
+                                    <a href="idea.html">Есть идея!<span class="tag f-a-q white-text">2</span></a>
+                                    <div class="divider"></div>
+                                    <a href="practices.html">Best Practices</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <a href="#" data-activates="slide-out" class="button-collapse">
+
+                    <img class="" src="img/menu.svg" onerror="this.onerror=null; this.src='menu.png'" alt="menu">
+                    <div class="new"></div>
+
+                </a>
+            </div>
+
+            <div class="col s8 center-align">
+                <span>форум</span>
+            </div>
+
+            <div class="col s2 right-align">
+
+                <ul id="slide-out-right" class="side-nav white-text right-swipe">
+
+                    <li class="lighter center-align"><a class="close click itemclick">
+                        <!--<img class="close icon-swipe" src="img/close.svg" onerror="this.onerror=null; this.src='close.png'" alt="close">-->
+                        <i class="zmdi zmdi-close white-text"></i>
+                    </a> группы</li>
+
+                    <li>
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search">
+                                <label for="search">Поиск участника или группы <i class="fa fa-search postfix" aria-hidden="true"></i></label>
+                            </div>
+                        </form>
+                    </li>
+
+                    <li><a href="groups.html">Все группы</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a href="groups.html"> Избранные</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a href="groups.html">Мои группы</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a href="groups.html">Общие группы <span class="tag transparent">2</span></a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a href="groups.html">Я участник</a></li>
+
+                    <li class="add"><a href="groups-new.html" class="btn-floating btn-large waves-effect waves-light custom-green"><i class="material-icons">add</i></a>Добавить группу</li>
+
+                </ul>
+                <a href="#" data-activates="slide-out-right" class="button-collapse-right">
+                    <img class="users" src="img/users_64.svg" onerror="this.onerror=null; this.src='users_64.png'" alt="users">
+                    <div class="new users"></div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section>
+    <div class="container standard-full forum">
+
+        <div class="row form-new total">
+            <a class="prev custom-green-text col s12" href="forum.html"><i class="postfix fa fa-angle-left" aria-hidden="true"></i>Назад к списку тем</a>
+        </div>
+
+            <div class="row no-mar">
+
+                <h5 class="custom-green-text col s12">Пересмотр маршрутизации</h5>
+
+                <div class="description col s4">Дата:</div>
+                <div class="description col s6"><span class="create custom-grey-light-text">04.08.2016, 12:10</span></div>
+                <div class="description col s2 right-align"><i class="fa fa-comment custom-green-text"></i>
+                    <span class="comments custom-green-text">2</span></div>
+
+                <div class="description col s4">Автор:</div>
+                <div class="description col s8"><span class="create custom-green-text">Елена Паненко</span></div>
+
+                <div class="description col s4">Участники:</div>
+                <div class="description col s8"><span class="create">все сотрудники</span></div>
+
+            </div>
+
+            <div class="row no-mar">
+                <div class="col s12">
+                <div class="description no-pad">Как подходить к разработке новой сегментации клиентов</div>
+                <div class="create custom-grey-light-text no-pad no-mar"> Из 2,5 миллионов клиентов, необходимо выбрать наиболее прибыльных. Из них выбрать постоянных и лояльных, далее выбрать территориально и т.д. У кого какие идеи?</div>
+                    <div class="right-align">
+                    <a class="custom-green-text" href="#answer"><i class="fa fa-mail-forward"></i>ответить</a>
+                </div>
+            </div>
+
+            <div class="rezolution discuss col s12">
+
+            <div class="row form-new total discuss">
+                <div class="col s3 right-align">
+                    <img src="img/sanko_143.png" alt="Санько" class="circle">
+                    <p class="person">Денис</p>
+                </div>
+                <div class="col s9 message left-position">
+                    <span>Предлагаю для каждого отдела составить форму выбоки по клиентам, а они уже дальше заполнят по своим реалиям</span>
+                    <a class="custom-green-text" href="#answer"><i class="fa fa-mail-forward"></i>ответить</a>
+                </div>
+            </div>
+
+                <div class="row form-new total discuss">
+                    <p class="re col s12">RE: Денис</p>
+                    <div class="col s9 message right-position">
+                        <span>Хорошая идея. Мне кажется у всех отделов нужно запросить набор полей для выборки</span>
+                        <a class="custom-green-text" href="#answer"><i class="fa fa-mail-forward"></i>ответить</a>
+                    </div>
+
+                    <div class="col s3 right-align">
+                        <img src="img/knishev_88.png" alt="Кнышев" class="circle">
+                        <p class="person">Владимир</p>
+                    </div>
+                    </div>
+
+
+                <div class="row form-new total discuss">
+                    <p class="re col s12">RE: Владимир</p>
+                    <div class="col s9 message right-position">
+                        <span>Я могу разослать email с просьбой составить набор полей по отделам</span>
+                        <a class="custom-green-text" href="#answer"><i class="fa fa-mail-forward"></i>ответить</a>
+                    </div>
+
+                    <div class="col s3 right-align">
+                        <img src="img/hr_88.png" alt="Лариса" class="circle">
+                        <p class="person">Лариса</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <form class="col s12" action="#">
+                <div class="row form-new total discuss">
+                    <div class="label col s12 no-pad-top">Добавить сообщение:</div>
+                    <div class="input-field col s12">
+                        <textarea id="answer" placeholder=""></textarea>
+                    </div>
+                </div>
+
+                <div class="row main-buttons add-inform new-message last">
+                    <div class="col s12 right-align">
+                        <a class="button btn-green center-align" href="forum.html">
+                            <span>отправить сообщение</span>
+                        </a>
+                    </div>
+                </div>
+
+                </form>
+        </div>
+    </div>
+</section>
+
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="ion.rangeSlider-2.1.4/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

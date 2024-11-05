@@ -1,0 +1,960 @@
+
+
+/*******************************************************************
+     1024 +
+*******************************************************************/
+@media (min-width: 1025px) {
+    html, body {
+        font-size: 24px;
+    }
+
+    .col.s8.center-align {
+        font-family: "LatoLight", sans-serif;
+        font-weight: 300;
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    .form-new i.fa.fa-search.postfix {
+        right: 2rem;
+    }
+}
+
+/*******************************************************************
+     1920 +
+*******************************************************************/
+@media (min-width: 1915px) {
+
+    .form-new i.fa.fa-angle-down {
+        right: 5%;
+    }
+
+    .total .col.s3 img {
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+    }
+}
+
+
+/*******************************************************************
+     1024 -
+*******************************************************************/
+@media (max-width: 1025px) {
+
+    html, body {
+        font-size: 18px;
+    }
+
+    .side-nav .collapsible-body, .side-nav.fixed .collapsible-body {
+        margin-top: 0;
+    }
+
+    header .col.s8.center-align {
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+
+    header .new {
+        top: -45px !important;
+    }
+
+    .side-nav a.close {
+        padding: 5px;
+    }
+
+    .collapsible-header span.time.two-lines {
+        margin-top: 30px;
+    }
+
+    span.new.custom-green.white-text {
+        padding: 5px 7px;
+    }
+
+    .main-buttons {
+        margin-top: 15px;
+    }
+
+    .form-new .label {
+        padding-top: 30px;
+    }
+
+    i.fa.fa-map-marker {
+        top: 9px;
+        right: 20px;
+    }
+
+    .form-new i.fa.fa-angle-down {
+        top: 20px;
+    }
+
+    .form-new .switch i.fa.fa-check {
+        top: 10px;
+    }
+
+    .add-inform .button {
+        padding-top: 14px;
+    }
+
+    .form-new .collapsible-header {
+        height: 65px;
+    }
+
+    .answer .form-new .collapsible-header {
+        height: 55px;
+    }
+
+    footer .btn-large i.material-icons {
+        position: relative;
+        top: -1px;
+        left: 0;
+    }
+
+    .collapsible-header h5 i.fa.fa-angle-down {
+        top: 7px;
+    }
+
+    .form-new img.user-icon {
+        max-width: 30px;
+    }
+
+    .main-buttons .button i {
+        font-size: 3.85rem;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .group-profile .collection .collection-item.avatar .title {
+        margin-top: 2%;
+    }
+
+    footer a.btn-floating.dropdown-button.btn-large.custom-grey {
+        padding-top: 4px;
+    }
+
+    footer span {
+        top: -1px;
+        left: 7px;
+    }
+
+    .label span.btn-toast {
+        padding: 0 7px;
+        font-size: 12px;
+    }
+
+    .form-new i.fa.fa-calendar {
+        top: 12px;
+    }
+
+
+}
+
+/*******************************************************************
+     980 -
+*******************************************************************/
+@media (max-width: 980px) {
+
+    header .new {
+        top: -45px !important;
+    }
+
+    header .col.s8.center-align {
+        line-height: 1.9;
+    }
+
+    .main-buttons a {
+        font-size: 0.5rem;
+    }
+
+    .side-nav li.plans, .side-nav li.communication, .side-nav li.rating, .side-nav li.f-a-q {
+        padding-top: 10px;
+    }
+
+    .side-nav .collapsible-header, .side-nav .collapsible-header.active {
+        min-height: 3rem;
+        padding-bottom: 5px;
+    }
+
+    .collapsible-header span.time {
+        width: 13%;
+    }
+
+    .collapsible-header span.action {
+        width: 60%;
+    }
+
+    .total .col.s3 img {
+        top: 2%;
+        max-width: 100px;
+    }
+
+    .main-buttons.add-inform .button {
+        line-height: 1.7;
+    }
+
+
+    .progress {
+        padding: 3px 0;
+    }
+
+    .percentage {
+        top: -15px;
+        left: 88%;
+        font-size: 14px;
+        line-height: 2.5;
+        width: 35px;
+        height: 35px;
+    }
+
+}
+
+/*******************************************************************
+     600 -
+*******************************************************************/
+@media (max-width: 600px) {
+
+    html, body {
+        font-size: 16px;
+    }
+
+    .main-buttons a {
+        font-size: 0.5rem;
+    }
+
+    header .new {
+        right: -5px !important;
+        top: -40px !important;
+        width: 20px;
+        height: 20px;
+    }
+
+    .new.users {
+        right: 15px !important;
+        top: -10px !important;
+    }
+
+    header img.users {
+        position: relative;
+        top: 0;
+        max-width: 90%;
+    }
+
+    .main-buttons.calendar .button {
+        min-height: 1rem;
+        line-height: 1rem;
+        height: 60px;
+    }
+
+    .collapsible-header span.time,
+    .collapsible-header span.action,
+    .collapsible-header span.place {
+        margin-top: 23px;
+    }
+
+    .collapsible-header span.time.two-lines {
+        margin-top: 8px;
+        line-height: 0.8;
+    }
+
+    span.action.two-lines, span.place.two-lines {
+        top: -15px;
+    }
+
+    .collapsible-header span.timer img {
+        right: 10px;
+        top: 10px;
+        width: 25px;
+    }
+
+    .btn-floating.btn-large {
+        width: 40px;
+        height: 40px;
+    }
+
+    .btn-floating.btn-large i {
+        line-height: 40px;
+    }
+
+    .btn-floating i.fa.fa-trash-o.white-text {
+        position: relative;
+        top: -3px;
+    }
+
+    header .right-swipe a.custom-green i,
+    header .right-swipe li>a>[class^="mdi-"],
+    header .right-swipe li>a>[class*="mdi-"],
+    header .right-swipe li>a>i.material-icons {
+        margin: 0;
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        line-height: 40px;
+        color: #fff;
+    }
+
+    .btn-floating.btn-large i.fa.fa-check {
+        line-height: 1;
+        position: relative;
+        top: -5px;
+    }
+
+    i.fa.fa-map-marker {
+        top: 10px;
+        font-size: 30px;
+    }
+
+    .collection-item span.new.custom-green.white-text {
+        top: 10px;
+    }
+
+    .messages span.title {
+        top: 0;
+    }
+
+    .main-buttons .button {
+        height: 105px;
+    }
+    .messages .collection .collection-item.avatar .title {
+        font-size: 0.8rem;
+    }
+
+    .form-new .collapsible-header {
+        height: 60px;
+    }
+
+    .answer .form-new .collapsible-header {
+        height: 50px;
+    }
+
+    .collapsible-body a.btn-floating.btn-large i {
+        top: -3px;
+        position: relative;
+    }
+
+    .collapsible-body a.btn-floating.btn-large i.fa.fa-trash-o {
+        top: -6px;
+    }
+
+    .form-new img.user-icon {
+        top: 5px;
+    }
+
+    .form-new i.fa.fa-angle-down {
+        top: 18px;
+    }
+
+    footer a.btn-floating.dropdown-button.btn-large.custom-grey {
+        padding-top: 0;
+    }
+
+    footer span {
+        top: -6px;
+        left: 3px;
+    }
+
+    .rezolution.col.s12 div.description {
+        padding-left: 3%;
+    }
+
+    .rezolution .col.s3.right-align img.circle {
+        margin-top: 20%;
+    }
+
+    .percentage {
+        left: 85%;
+    }
+
+    .group-profile .collection .collection-item.avatar .title {
+        margin-top: 3%;
+    }
+
+    .base a.btn-floating.btn-large.custom-grey.white-text {
+        line-height: 1.35;
+    }
+}
+
+/*******************************************************************
+     570 -
+*******************************************************************/
+@media (max-width: 570px) {
+    header .new {
+        top: -40px !important;
+        right: -5px !important;
+    }
+
+    .new.users {
+        top: -10px !important;
+        right: 10px !important;
+    }
+
+}
+
+/*******************************************************************
+     460 -
+*******************************************************************/
+@media (max-width: 460px) {
+    html, body {
+        font-size: 14px;
+    }
+
+    .grey-bg {
+        padding: 40px 10px 65px 10px;
+    }
+
+    .grey-bg input:not([type]), .grey-bg input[type=text] {
+        height: 55px;
+        width: 90%;
+    }
+
+    .input-field i.fa.fa-angle-down.white-text {
+        top: 50px;
+    }
+
+    header {
+        height: 65px;
+        padding-top: 15px;
+    }
+
+    header img.users {
+        position: relative;
+        top: -5px;
+        max-width: 100%;
+    }
+
+    header .new,
+    .new.users {
+        right: -5px !important;
+        top: -40px !important;
+        width: 18px;
+        height: 18px;
+    }
+
+    .new.users {
+        right: 1px !important;
+        top: -12px !important;
+    }
+
+    header .col.s8.center-align {
+        font-size: 1.4rem;
+        line-height: 1.8;
+    }
+
+    .side-nav li.plans, .side-nav li.communication, .side-nav li.rating, .side-nav li.f-a-q {
+        padding: 5px 0 0 0;
+        line-height: 30px;
+    }
+
+    .side-nav .collapsible-header, .side-nav .collapsible-header.active {
+        min-height: 3rem;
+        padding-bottom: 5px;
+    }
+
+    .side-nav .collapsible-body, .side-nav.fixed .collapsible-body {
+        margin-top: 0;
+    }
+
+    .side-nav .collapsible-header i {
+        font-size: 24px;
+    }
+
+    .right-swipe a.close img {
+        top: 8px;
+    }
+
+    .main-buttons a img {
+        margin-bottom: 5px;
+        width: 28%;
+    }
+
+    .main-buttons .btn-grey img {
+        margin-bottom: 9px;
+    }
+
+    .main-buttons a.button {
+        height: 67px;
+        font-size: 0.7rem;
+    }
+
+    .main-buttons .btn-blue img {
+        margin-bottom: 10px;
+    }
+
+    .collapsible-header span.action,
+    .collapsible-header span.place {
+        font-size: 0.75rem;
+        padding-left: 10px;
+    }
+
+    .collapsible-header span.time.two-lines {
+        margin-top: 15px;
+    }
+
+    span.action.two-lines, span.place.two-lines {
+        top: -10px;
+    }
+
+    .collapsible-header span.timer img {
+        top: 18px;
+        width: 20px;
+    }
+
+    .collapsible-body .btn-floating.btn-large {
+        margin-top: 0;
+        position: relative;
+        top: -5px;
+    }
+
+    a.to-calendar.custom-green-text {
+        font-size: 1.2rem;
+    }
+
+    i.fa.fa-map-marker {
+        top: 6px;
+        font-size: 26px;
+    }
+
+    .form-new .col.s1.center-align {
+        padding-top: 10px;
+    }
+
+    .form-new .line.col.s2.center-align {
+        padding-top: 5px;
+    }
+
+    .form-new .switch {
+        top: 5px;
+    }
+
+    .form-new i.fa.fa-angle-down {
+        top: 14px;
+    }
+
+
+    .form-new .label {
+        padding-top: 22px;
+    }
+
+    .side-nav a.close {
+        padding: 0 5px;
+    }
+
+    .main-buttons.add-inform .button {
+        height: 32px;
+        font-size: 0.6rem;
+        line-height: 1.2;
+    }
+
+    .collection-item span.new.custom-green.white-text {
+        top: 7px;
+        font-size: 0.8rem;
+    }
+
+    .messages .collection-item span.new.custom-green.white-text {
+        top: -10px;
+        right: 15px;
+    }
+
+
+
+    .form-new .collapsible-header {
+        height: 55px;
+    }
+
+    .col.s9 span.desc-qty,
+    .col.s9 .description span.custom-green-text,
+    .col.s9 .description span.custom-red-text {
+        margin-left: 5px;
+        font-size: 0.9rem;
+    }
+
+    .task .col.s9 span.desc-qty,
+    .task .col.s9 .description span.custom-green-text,
+    .task .col.s9 .description span.custom-red-text {
+        margin-left: 2px;
+        font-size: 0.95rem;
+    }
+
+    .collapsible-body .btn-floating.btn-large i {
+        top: -4px;
+        position: relative;
+    }
+
+    .btn-floating i.fa.fa-trash-o.white-text {
+        top: -6px;
+    }
+
+    .collapsible-header h5 i.fa.fa-angle-down {
+        top: 5px;
+    }
+
+    .form-new img.user-icon {
+        max-width: 20px;
+        top: 8px;
+    }
+
+
+    .total .col.s3 img {
+        top: 17%;
+        max-width: 60px;
+    }
+
+    header .col.s2 a i {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    header .col.s2 a i.fa.fa-comment {
+        font-size: 22px;
+        line-height: 1.5;
+        margin-right: 2px;
+    }
+
+    .container.mood {
+        width: 80%;
+    }
+
+    .main-buttons .button i {
+        font-size: 3.4rem;
+        margin-bottom: 3px;
+    }
+
+    .main-buttons .btn-blue i {
+        font-size: 2.7rem;
+    }
+
+    .grey-bg input[type=text].validate+label, .grey-bg .select-wrapper+label {
+        font-size: 1rem;
+    }
+
+    a.scan {
+        font-size: 1.2rem;
+    }
+
+    .grey-bg .btn-green {
+        max-width: 150px;
+        height: 41px;
+        font-size: 15px;
+    }
+
+    .grey-bg .input-field i.fa.fa-angle-down.white-text {
+        top: 55px;
+    }
+
+    .side-nav .collapsible-body a span.tag.plans,
+    .side-nav .collapsible-body a span.tag.communication,
+    .side-nav .collapsible-body a span.tag.rating,
+    .side-nav .collapsible-body a span.tag.f-a-q {
+        font-size: 1.1rem;
+    }
+
+    .collapsible-body a.btn-floating.btn-large i {
+        top: -1px;
+    }
+
+    .collapsible-body a.btn-floating.btn-large i.fa.fa-trash-o {
+        top: -4px;
+        left: 1px;
+    }
+
+    .collapsible-body a.btn-floating.btn-large.custom-green i,
+    .collapsible-body a.btn-floating.btn-large.custom-blue i {
+        top: -4px;
+    }
+
+
+    footer .btn-large i.material-icons {
+        top: 0;
+    }
+
+    .collapsible-body p,
+    .description {
+        font-size: 1.1rem;
+    }
+
+    .form-new i.fa.fa-calendar {
+        top: 10px;
+    }
+
+    .standards .collapsible-body span.create.custom-grey-light-text {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .rezolution.col.s12 div.description {
+        padding-left: 0;
+    }
+
+    .rezolution .col.s3.right-align img.circle {
+        margin-top: 30%;
+    }
+
+    .labels .label i.material-icons {
+        font-size: 50px;
+    }
+
+    .labels .label span.btn-toast {
+        padding: 0 7px;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    h5.custom-green-text {
+        font-size: 1.1rem;
+    }
+
+    .group-profile .collection .collection-item.avatar .title {
+        margin-top: 4%;
+    }
+    .base a.btn-floating.btn-large.custom-grey.white-text {
+        line-height: 1.5;
+    }
+
+    .with-arrow .collapsible-body a.btn-floating.btn-large i {
+        top: -3px;
+    }
+
+    .with-arrow .collapsible-body a.btn-floating.btn-large i.fa.fa-trash-o {
+        top: -6px;
+    }
+
+
+}
+
+/*******************************************************************
+     390 -
+*******************************************************************/
+@media (max-width: 390px) {
+
+    html, body {
+        font-size: 14px;
+    }
+
+    .grey-bg {
+        padding: 40px 15px 65px 15px;
+    }
+
+    header .new {
+        top: -30px !important;
+        right: -5px !important;
+    }
+
+    .new.users {
+        top: -12px !important;
+        right: 2px !important;
+    }
+
+    .color {
+        margin-right: 11px;
+    }
+
+    .row.main-buttons.add-inform .col.s4 {
+        padding-left: 0 !important;
+    }
+
+    .row.main-buttons.add-inform .button {
+        font-size: 0.56rem;
+    }
+
+    .row.main-buttons.add-inform.new-message .button {
+        font-size: 0.9rem;
+        line-height: 1;
+    }
+
+    .row.main-buttons.add-inform.new-message .button span {
+        line-height: 0.7;
+    }
+
+    .data p {
+        font-size: 0.9rem;
+    }
+
+    .main-buttons a.button {
+        height: 60px;
+    }
+
+    h5.custom-green-text {
+        font-size: 1.05rem;
+    }
+
+    .task h5.custom-green-text {
+        font-size: 0.95rem;
+    }
+
+
+    .mood .main-buttons.add-inform .button {
+        font-size: 0.95rem;
+        line-height: 1;
+    }
+
+    .main-buttons .button i {
+        font-size: 3rem;
+        margin-bottom: 2px;
+    }
+
+    .collapsible-body p,
+    .description {
+        font-size: 0.95rem;
+    }
+
+    .task .collapsible-body p.description span {
+        font-size: 1rem;
+    }
+
+    .main-buttons .button i.fa.fa-check-square-o.white-text {
+        font-size: 2.6rem;
+    }
+
+    header .col.s8.center-align {
+        font-size: 1.3rem;
+    }
+
+
+}
+
+
+/*******************************************************************
+     360 -
+*******************************************************************/
+@media (max-width: 365px) {
+
+    html, body {
+        font-size: 13px;
+    }
+
+    .collapsible-header span.time {
+        width: 15%;
+    }
+
+    header .new {
+        top: -28px !important;
+        right: -5px !important;
+    }
+
+    .collapsible-header span.action, .collapsible-header span.place {
+        padding-left: 5px;
+    }
+
+    .collapsible-header span.timer img {
+        right: 5px;
+    }
+
+    .color {
+        margin-right: 6px;
+        width: 45px;
+        height: 45px;
+        padding: 9px 0 0 14px;
+    }
+
+    .main-buttons.add-inform .button {
+        font-size: 0.45rem;
+    }
+    .data p {
+        font-size: 0.9rem;
+    }
+
+    .messages .collection .collection-item.avatar p {
+        width: 80%;
+    }
+
+    header .col.s8.center-align {
+        font-size: 1.045rem;
+        line-height: 2.5;
+    }
+
+    h5.custom-green-text {
+        font-size: 0.85rem;
+    }
+
+    .form-new .collapsible-header {
+        height: 53px;
+    }
+
+    .collapsible-header h5 i.fa.fa-angle-down {
+        top: 7px;
+    }
+
+    .collapsible-body .description {
+        font-size: 0.95rem;
+    }
+
+    .col.s9 span.desc-qty,
+    .col.s9 .description span.custom-green-text,
+    .col.s9 .description span.custom-red-text,
+    .collapsible-body .description span.regular {
+        font-size: 0.85rem;
+    }
+
+    .total .col.s3 img {
+        top: 25%;
+        max-width: 55px;
+    }
+
+    header .col.s2 a i.fa.fa-comment {
+        font-size: 16px;
+        line-height: 2;
+        margin-right: 0;
+    }
+
+    span.create.custom-green-text {
+        font-size: 0.85rem;
+        margin-right: 5px;
+    }
+
+    .discuss .person span.create {
+        font-size: 0.85rem;
+    }
+
+    .main-buttons .button i {
+        font-size: 2.7rem;
+        margin-bottom: 2px;
+    }
+
+    .collapsible-header h5.custom-green-text {
+        font-size: 0.9rem;
+    }
+
+    .row.main-buttons.add-inform.new-message .button {
+        font-size: 0.9rem;
+        line-height: 1;
+    }
+
+    .collapsible-header span.action, .collapsible-header span.place {
+        font-size: 0.65rem;
+    }
+
+    input.col.s2 {
+        width: 16% !important;
+        padding: 0;
+    }
+
+    span.desc-qty, .description span.custom-green-text, .description span.custom-red-text {
+        margin-left: 5px;
+    }
+
+    .progress-wrapper {
+        margin: 1.2rem 0 0 0;
+    }
+
+    header .col.s2 a i.fa.fa-comment {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .regular [type="checkbox"]+label {
+        padding-left: 35px;
+        font-size: 0.9rem;
+    }
+
+    .base a.btn-floating.btn-large.custom-grey.white-text {
+        line-height: 1.6;
+    }
+
+    header .col.s2.right-align {
+        padding-left: 0 !important;
+    }
+
+    .answer .form-new .collapsible-header {
+        height: 45px;
+    }
+
+}

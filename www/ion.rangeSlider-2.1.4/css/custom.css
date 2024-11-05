@@ -1,0 +1,91 @@
+/* SKIN */
+
+.irs-min, .irs-max {
+    display: none;
+}
+
+.mood .irs-min, .mood .irs-max {
+    display: block;
+    position: absolute;
+    top: 55px;
+    color: #5b6779;
+    background: transparent;
+    font-size: 1rem;
+    visibility: visible !important;
+}
+
+.preference .irs-min, .preference .irs-max {
+    opacity: 0;
+}
+
+.irs-line {
+    height: 4px;
+    top: 28px;
+}
+
+.irs-bar {
+    height: 4px;
+    top: 28px;
+    background: #ddd;
+    background-position: 0 -60px;
+}
+
+.irs-bar-edge {
+    top: 28px;
+    height: 4px;
+    width: 8px;
+    background: #8caa0b;
+    background-position: 0 -90px;
+    border-radius: 5px 0 0 5px;
+}
+
+.irs-single {
+    color: #fff;
+    font-size: 16px;
+    line-height: 2.2;
+    text-shadow: none;
+    background: #8caa0b;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 99;
+    top: 8px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.irs-from:after, .irs-to:after, .irs-single:after {
+    opacity: 0;
+}
+
+
+.mood .irs-with-grid .irs-grid {
+    display: block;
+    position: relative;
+    top: -21px;
+}
+
+.mood .irs-grid-text {
+    color: transparent;
+    background: #8caa0b;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+.mood .irs-single {
+    color: transparent;
+}
+
+.mood .label {
+    font-size: 0.9rem;
+}
+
+/*.mood span.irs-grid-text.js-grid-text-3 {
+    background: #ddd;
+}*/
+
+.mood .irs-grid-pol {
+    background: transparent;
+}

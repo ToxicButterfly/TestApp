@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/global.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/media.css" media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body class="start">
+<section class="grey-bg">
+    <div class="container">
+        <div class="row">
+            <a class="logo" href="calendar.html"><img class="center-block" src="img/logo_470.png" alt="FAIRMAX"></a>
+        </div>
+
+            <form>
+                <div class="row">
+                <div class="input-field col s12">
+                    <div class="label white-text no-pad-top">Введите логин (email)</div>
+                    <input placeholder="denis@gmail.com" id="email" type="text">
+                    <!--<label class="active" for="email">Введите логин (email)</label>-->
+                </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="label white-text no-pad-top">Пароль</div>
+                        <input placeholder="****************" id="password" type="text">
+                        <!--<label class="active" for="password">Пароль</label>-->
+                    </div>
+                </div>
+
+                <div class="row">
+                      <a class="btn-green center-block" href="calendar.html">Вход</a>
+
+                </div>
+
+                <div class="row center-align">
+                    <a class="scan" href="#">Cканировать QR - код для входа</a>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="label  white-text no-pad-top">Язык приложения</div>
+                        <i class="fa fa-angle-down white-text" aria-hidden="true"></i>
+                        <select class="material-selet">
+                            <option value="" disabled selected>Русский</option>
+                            <option value="2">English</option>
+                            <option value="3">French</option>
+                        </select>
+                        <!--
+                        <label>Язык приложения</label>-->
+                    </div>
+
+                </div>
+            </form>
+
+    </div>
+</section>
+
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>
