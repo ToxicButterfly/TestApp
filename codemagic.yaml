@@ -21,4 +21,4 @@ workflows:
           
     artifacts:
       # Указываем путь к артефактам сборки (в данном случае .ipa файл для iOS)
-      - build/ios/**/*.ipa
+      - platforms/ios/build/device/*.ipa
