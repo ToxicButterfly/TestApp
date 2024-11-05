@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- RangeSlider CSS file -->
+    <link type="text/css" rel="stylesheet" href="css/global.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/media.css" media="screen,projection"/>
+    <link rel="stylesheet" href="ion.rangeSlider-2.1.4/css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="ion.rangeSlider-2.1.4/css/ion.rangeSlider.skinFlat.css">
+    <link rel="stylesheet" href="ion.rangeSlider-2.1.4/css/custom.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col s2">
+
+                <a href="tasks.html">
+                    <i class="fa fa-long-arrow-left white-text" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="col s8 center-align">
+                <span>поручения</span>
+            </div>
+
+            <div class="col s2 right-align">
+
+                <ul id="slide-out-right" class="side-nav white-text right-swipe">
+
+                    <li class="lighter center-align"><a class="close click itemclick">
+                        <!--<img class="close icon-swipe" src="img/close.svg" onerror="this.onerror=null; this.src='close.png'" alt="close">-->
+                        <i class="zmdi zmdi-close white-text"></i>
+                    </a> группы</li>
+
+                    <li>
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search">
+                                <label for="search">Поиск участника или группы <i class="fa fa-search postfix" aria-hidden="true"></i></label>
+                            </div>
+                        </form>
+                    </li>
+
+                    <li><a href="groups.html">Все группы</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a href="groups.html"> Избранные</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a href="groups.html">Мои группы</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a href="groups.html">Общие группы <span class="tag transparent">2</span></a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a href="groups.html">Я участник</a></li>
+
+                    <li class="add"><a href="groups-new.html" class="btn-floating btn-large waves-effect waves-light custom-green"><i class="material-icons">add</i></a>Добавить группу</li>
+
+                </ul>
+
+                <a href="messages.html">
+                    <i class="fa fa-comment white-text"></i>
+                    <span class="comments white-text">2</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+
+        <div class="row form-new total">
+
+            <div class="row no-mar">
+                <div class="description col s5">Создатель:</div>
+                <div class="create col s7 custom-grey-light-text">
+                    <span class="create custom-green-text">Владимир Горин</span><span class="create custom-grey-light-text">04.08.2016</span>
+                </div>
+            </div>
+
+            <div class="row no-mar">
+                <div class="description col s5">Приоритет:</div>
+                <div class="create col s7 custom-red-text">высокий</div>
+            </div>
+
+            <form class="col s12" action="#">
+
+                <div class="row">
+                    <div class="label col s12 no-pad-top">Исполнитель</div>
+                    <div class="col s12">
+                        <a href="#" data-activates="slide-out-right" class="button-collapse-right person-choice col s12"><img class="user-icon" src="img/user-icon_52x63.svg" onerror="this.onerror=null; this.src='user-icon_52x63.png'" alt="Исполнитель"></a>
+                    </div>
+                </div>
+
+            <div class="row">
+                <div class="label col s12 no-pad-top">Статус</div>
+                <div class="input-field col s12">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <select>
+                        <option value="" disabled selected>В работе</option>
+                        <option value="1">На рассмотрении</option>
+                        <option value="2">Выполнено</option>
+                    </select>
+                </div>
+            </div>
+
+                <div class="row">
+                    <div class="label col s12 no-pad-top">Задача выполнена (%)</div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                    <div class="range" style="position: relative; padding: 0;"><input type="text" id="slider" name="slider" value="" /></div>
+                    </div>
+                </div>
+
+                <div class="row no-mar">
+                    <div class="description col s5 no-pad">Чекпоинт:</div>
+                    <div class="create col s7 custom-grey-light-text">06.08.2016 12:00</div>
+                </div>
+
+                <div class="row no-mar">
+                <div class="description col s5 no-pad">Завершить до:</div>
+                    <div class="create col s7 custom-grey-light-text">07.08.2016 12:00</div>
+                </div>
+
+
+                <div class="row no-mar">
+                    <div class="description col s5 no-pad">Маркер:</div>
+                    <div class="create col s7 custom-grey-light-text">Оценка и развитие</div>
+                </div>
+
+
+                <div class="row no-mar">
+                        <div class="description col s5 no-pad">Участники:</div> <div class="create col s7 custom-green-text">Девочка HR,<br>Михаил Кнышев</div>
+                </div>
+
+
+                <div class="row no-mar">
+                    <div class="description col s12 no-pad">Описание:</div>
+                    <div class="create col s12 custom-grey-light-text no-pad">Денис, здравствуйте! Появилась возможность высвободить немного Вашего времени... для проведения тренинга для подразделения продаж. </div>
+                </div>
+
+            <div class="row send-button center-align">
+                <a class="btn-floating btn-large waves-effect waves-light custom-green" type="submit" href="tasks.html"><i class="fa fa-check white-text" aria-hidden="true"></i></a></div>
+
+                </form>
+
+        </div>
+
+
+        <h5 class="discuss center-align"><i class="fa fa-comment custom-green-text" aria-hidden="true"></i>Обсуждение <span class="qty">(2)</span></h5>
+
+        <div class="row form-new total discuss">
+           <div class="col s3">
+               <img src="img/sanko_143.png" alt="Санько" class="circle">
+           </div>
+            <div class="col s9 message left-position">
+               <span>Да, Владимир. Я уже давно хотел провести тренинг, но не представлялось удобного случая. Стоит ли дополнительно обсуждать систему управления временем Стивена Кови?</span>
+            </div>
+        </div>
+
+        <div class="row form-new total discuss">
+            <div class="col s9 message right-position">
+                <span>Хорошая идея. Если не будет хватать времени, сократите блок приоритизации.</span>
+            </div>
+
+            <div class="col s3 right-align">
+                <img src="img/knishev_88.png" alt="Кнышев" class="circle">
+            </div>
+
+        </div>
+
+        <div class="row form-new total discuss">
+                <div class="label col s12 no-pad-top">Добавить сообщения</div>
+                <div class="input-field col s12">
+                    <textarea placeholder=""></textarea>
+                </div>
+        </div>
+
+        <div class="row main-buttons add-inform new-message last">
+            <div class="col s12 right-align">
+                <a class="button btn-green center-align" href="tasks2.html">
+                    <span>отправить сообщение</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="ion.rangeSlider-2.1.4/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

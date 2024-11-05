@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- RangeSlider CSS file -->
+    <link type="text/css" rel="stylesheet" href="css/global.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/media.css" media="screen,projection"/>
+    <link rel="stylesheet" href="ion.rangeSlider-2.1.4/css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="ion.rangeSlider-2.1.4/css/ion.rangeSlider.skinFlat.css">
+    <link rel="stylesheet" href="ion.rangeSlider-2.1.4/css/custom.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col s2">
+
+                <a href="question-details.html">
+                    <i class="fa fa-long-arrow-left white-text" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="col s8 center-align">
+                <span>опросы</span>
+            </div>
+
+            <div class="col s2 right-align">
+
+                <ul id="slide-out-right" class="side-nav white-text right-swipe">
+
+                    <li class="lighter center-align"><a class="close click itemclick">
+                        <!--<img class="close icon-swipe" src="img/close.svg" onerror="this.onerror=null; this.src='close.png'" alt="close">-->
+                        <i class="zmdi zmdi-close white-text"></i>
+                    </a> группы</li>
+
+                    <li>
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search">
+                                <label for="search">Поиск участника или группы <i class="fa fa-search postfix" aria-hidden="true"></i></label>
+                            </div>
+                        </form>
+                    </li>
+
+                    <li><a href="groups.html">Все группы</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a href="groups.html"> Избранные</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a href="groups.html">Мои группы</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a href="groups.html">Общие группы <span class="tag transparent">2</span></a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a href="groups.html">Я участник</a></li>
+
+                    <li class="add"><a href="groups-new.html" class="btn-floating btn-large waves-effect waves-light custom-green"><i class="material-icons">add</i></a>Добавить группу</li>
+
+                </ul>
+                <a href="#" data-activates="slide-out-right" class="button-collapse-right">
+                    <img class="users" src="img/users_64.svg" onerror="this.onerror=null; this.src='users_64.png'" alt="users">
+                    <div class="new users"></div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="no-pad-top">
+
+    <div class="row questionnaire no-mar">
+        <h5 class="custom-green-text center-align no-mar-top">Oпрос сотрудников</h5>
+    </div>
+
+    <div class="container standard-full forum poll">
+
+            <div class="row no-mar">
+
+                <div class="description col s5 no-pad">Дата завершения:</div>
+                <div class="description col s5"><span class="create custom-grey-light-text">3 дн, 12ч, 32 мин</span></div>
+                <div class="description col s2 right-align no-mar"><a href="question-details.html" class="btn-floating btn-large waves-effect waves-light custom-green"><i class="material-icons white-text">mode_edit</i></a></div>
+
+                <div class="description col s5 no-pad">Создатель:</div>
+                <div class="description col s7"><span class="create custom-green-text">Вы</span></div>
+
+                <div class="description col s5 no-pad">Ответов получено:</div>
+                <div class="description col s7"><span class="create">35</span></div>
+
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                <div class="description no-pad">Описание:</div>
+                <div class="create custom-grey-light-text no-pad mar-bot-10">Ключевая задача данного исследования – выявление сильных сторон и областей для дальнейшего улучшения.<br>Для проведения опроса был привлечен независимый консультант, Денис Санько, имеющий многолетний опыт проведения опросов. Помимо анализа Ваших мнений и рекомендаций, Денис обеспечит ПОЛНУЮ КОНФИДЕНЦИАЛЬНОСТЬ Ваших ответов.Мнения сотрудников тех подразделений, состав которых не превышает 5 человек, будут включены в более крупные подразделения для сохранения конфиденциальности ответов.</div>
+
+            </div>
+            </div>
+
+                <form class="" action="#">
+
+                    <div class="row questionnaire no-mar">
+                        <div class="description no-pad">Результаты опроса</div>
+                        <div class="description no-pad">
+                            <div class="switch no-mar-bot mar-top-20">
+                                <label>
+                                    Видны всем
+                                    <input type="checkbox">
+                                    <span class="lever"></span>
+                                    Скрыты
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+            <div class="row">
+            <div class="rezolution discuss questionnaire col s12 no-mar-bot">
+                <div class="description no-pad">Какое основное мероприятие Вы предпочтете?</div>
+
+                <div class="row no-mar">
+                    <div class="regular activities col s12">
+
+                        <div class="col s6 no-pad">
+                        <input type="checkbox" class="filled-in" id="activity1" />
+                        <label for="activity1">
+                            Лазертаг
+                        </label>
+
+                            <input type="checkbox" class="filled-in" id="activity2" />
+                            <label for="activity2">
+                                Пентбол
+                            </label>
+                        </div>
+
+                        <div class="col s6 no-pad">
+                            <input type="checkbox" class="filled-in" id="activity3" />
+                            <label for="activity3">
+                                Бадминтон
+                            </label>
+
+                            <input type="checkbox" class="filled-in" id="activity4" />
+                            <label for="activity4">
+                                Танцы
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row two-buttons no-mar">
+                    <div class="col s6 right-align">
+                        <a href="question-details.html" class="btn-floating btn-large waves-effect waves-light custom-green"><i class="material-icons white-text">mode_edit</i></a>
+                    </div>
+                    <div class="col s6">
+                        <a class="btn-floating btn-large waves-effect waves-light custom-red"><i class="fa fa-trash-o white-text" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+             <div class="rezolution discuss questionnaire col s12 no-mar-bot">
+                <div class="row">
+                    <div class="description col s12">Какого исполнителя Вы предпочтете для праздничного вечера?</div>
+                    <div class="input-field col s12">
+                        <input class="white" placeholder="Ваш вариант"  type="text">
+                    </div>
+                </div>
+                        <div class="row two-buttons no-mar">
+                            <div class="col s6 right-align">
+                                <a href="question-details.html" class="btn-floating btn-large waves-effect waves-light custom-green"><i class="material-icons white-text">mode_edit</i></a>
+                            </div>
+                            <div class="col s6">
+                                <a class="btn-floating btn-large waves-effect waves-light custom-red"><i class="fa fa-trash-o white-text" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+             </div>
+
+
+             <div class="rezolution discuss questionnaire col s12 no-mar">
+                <div class="row">
+
+                    <div class="description col s12">Каковы Ваши предпочтения по проживанию?</div>
+                    <div class="regular activities col s12">
+
+                        <div class="col s6 no-pad">
+                            <input name="group1" type="radio" class="with-gap"  id="accommodation1" />
+                            <label for="accommodation1">
+                                Отель
+                            </label>
+                        </div>
+
+                        <div class="col s6 no-pad">
+                            <input name="group1" type="radio" class="with-gap" id="accommodation2" />
+                            <label for="accommodation2">
+                                Аппартаменты
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="input-field col s12">
+                        <input class="white" placeholder="Ваш вариант"  type="text">
+                    </div>
+                </div>
+
+                 <div class="row two-buttons no-mar">
+                     <div class="col s6 right-align">
+                         <a href="question-details.html" class="btn-floating btn-large waves-effect waves-light custom-green"><i class="material-icons white-text">mode_edit</i></a>
+                     </div>
+                     <div class="col s6">
+                         <a class="btn-floating btn-large waves-effect waves-light custom-red"><i class="fa fa-trash-o white-text" aria-hidden="true"></i></a>
+                     </div>
+                 </div>
+             </div>
+
+                <div class="row main-buttons add-inform new-message last">
+                    <div class="col s12 center-align">
+                        <a class="button btn-green center-align" href="questionnaires.html">
+                            <span>опубликовать опрос</span>
+                        </a>
+                    </div>
+                </div>
+
+                </form>
+        </div>
+</section>
+
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="ion.rangeSlider-2.1.4/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/global.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/media.css" media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col s2">
+
+                <a href="support.html">
+                    <i class="fa fa-long-arrow-left white-text" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="col s8 center-align">
+                <span>поддержка</span>
+            </div>
+
+
+            <div class="col s2 right-align">
+
+                <ul id="slide-out-right" class="side-nav white-text right-swipe">
+
+                    <li class="lighter center-align"><a class="close click itemclick">
+                        <!--<img class="close icon-swipe" src="img/close.svg" onerror="this.onerror=null; this.src='close.png'" alt="close">-->
+                        <i class="zmdi zmdi-close white-text"></i>
+                    </a> группы</li>
+
+                    <li>
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search">
+                                <label for="search">Поиск участника или группы <i class="fa fa-search postfix" aria-hidden="true"></i></label>
+                            </div>
+                        </form>
+                    </li>
+
+                    <li><a href="groups.html">Все группы</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a href="groups.html"> Избранные</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a href="groups.html">Мои группы</a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a href="groups.html">Общие группы <span class="tag transparent">2</span></a></li>
+                    <li><div class="divider"></div></li>
+                    <li><a href="groups.html">Я участник</a></li>
+
+                    <li class="add"><a href="groups-new.html" class="btn-floating btn-large waves-effect waves-light custom-green"><i class="material-icons">add</i></a>Добавить группу</li>
+
+                </ul>
+                <a href="#" data-activates="slide-out-right" class="button-collapse-right">
+                    <img class="users" src="img/users_64.svg" onerror="this.onerror=null; this.src='users_64.png'" alt="users">
+                    <div class="new users"></div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container standard support-new">
+
+        <div class="row form-new">
+
+            <form class="col s12">
+
+                <h3 class="center-align">создать запрос на поддержку</h3>
+
+                <div class="row">
+                    <div class="label col s12 no-pad-top">Или укажите тип запроса (мультивыбор)</div>
+                    <div class="input-field col s12">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <select multiple>
+                            <option value="1" selected>IT Request</option>
+                            <option value="2">Тип 2</option>
+                            <option value="3">Тип 3</option>
+                            <option value="4">Тип 4</option>
+                        </select>
+                    </div>
+                </div>
+
+                    <div class="row">
+                        <div class="label col s12 no-pad-top">Тема зпроса</div>
+                        <div class="input-field col s12">
+                           <input type="text" class="theme">
+                        </div>
+                    </div>
+
+                <div class="row">
+                    <div class="label col s12 no-pad-top">Укажите конкретных участников</div>
+                    <div class="col s12">
+                        <a href="#" data-activates="slide-out-right" class="button-collapse-right person-choice col s12"><img class="user-icon" src="img/user-icon_52x63.svg" onerror="this.onerror=null; this.src='user-icon_52x63.png'" alt="Исполнитель"></a>
+                    </div>
+                </div>
+
+                <div class="row priority">
+                    <div class="label col s12 no-pad-top">Приоритет</div>
+                    <div class="input-field col s12">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <select>
+                            <option class="custom-red-text" value="1" selected>Высокий</option>
+                            <option class="custom-green-text" value="2">В работе</option>
+                            <option value="3">Завершено</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="label col s12 no-pad-top">Статус</div>
+                    <div class="input-field col s12">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <select>
+                            <option value="1" selected>В работе</option>
+                            <option value="2">На рассмотрении</option>
+                            <option value="3">Выполнено</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="label col s12 no-pad-top">Описание запроса</div>
+                    <div class="input-field col s12">
+                        <textarea placeholder=""></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="label col s12 no-pad-top">Дедлайн выполнения</div>
+                    <div class="input-field col s8">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <input type="date" class="datepicker">
+                    </div>
+
+                    <div class="input-field col s4 no-pad">
+                        <input id="time-h" type="text" placeholder="10" class="col s5 center-align">
+                        <div class="col s1 center-align">:</div>
+                        <input id="time-m" type="text" placeholder="00" class="col s5 center-align">
+
+                    </div>
+                </div>
+
+
+
+                <div class="row send-button right-align">
+                    <a class="btn-floating btn-large waves-effect waves-light custom-green" type="submit" href="request.html"><i class="fa fa-check white-text" aria-hidden="true"></i></a></div>
+
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>
