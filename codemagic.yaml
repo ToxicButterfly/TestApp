@@ -1,5 +1,24 @@
 workflows:
-    ios-workflow-id:
-        name: iOS Sample Workflow
-        max_build_duration: 120
-        instance_type: mac_mini_m2
+  ios-workflow:
+    name: Build iOS Cordova App
+    environment:
+      # Указываем версию Xcode для iOS сборки
+      xcode: latest  # Версия Xcode, например, latest
+      cocoapods: default
+      node: 16.20.0  # Версия Node.js
+    scripts:
+      # Установка Cordova и зависимостей
+      - name: Install Cordova and dependencies
+        script: |
+          npm install -g cordova  # Устанавливаем Cordova глобально
+          npm install  # Устанавливаем зависимости вашего проекта, если есть package.json
+
+      # Сборка приложения с помощью Cordova
+      - name: Build iOS with Cordova
+        script: |
+          cordova platform add ios  # Добавляем платформу iOS
+          cordova build ios --release  # Собираем проект для iOS (релизная версия)
+          
+    artifacts:
+      # Указываем путь к артефактам сборки (в данном случае .ipa файл для iOS)
+      - build/ios/**/*.ipa
