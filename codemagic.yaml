@@ -1,46 +1,29 @@
 workflows:
-  ios-workflow:
-    name: Build iOS Cordova App
-    instance_type: mac_pro
-    max_build_duration: 100
+  vlaw-ios-staging:
+    name: vlaw ios staging
+    max_build_duration: 60
     environment:
+      node: 14.20.0
+      npm: 6.14.17
+      ios_signing:
+        provisioning_profiles:
+        - LawLocker_Staging_Profile
+        certificates:
+        - Codemagic_Development_Certificate
       groups:
-      - keystore_credentials
-      - app_store_credentials
-      vars:
-        GOOGLE_PLAY_TRACK: "beta"
-      flutter: stable
-      xcode: latest  # Версия Xcode, например, latest
-      cocoapods: 1.9.1
-      node: 16.20.0  # Версия Node.js
-      npm: 6.13.7
-      ndk: r21d
-    triggering:
-      events:
-        - push
-        - pull_request
-        - tag
-      branch_patterns:
-        - pattern: "*"
-          include: true
-        - pattern: develop
-          include: false
-        - pattern: feature-1
-          include: true
-          source: true
+      - staging
     scripts:
-      # Установка Cordova и зависимостей
-      - name: Install Cordova and dependencies
-        script: |
-          npm install -g cordova  # Устанавливаем Cordova глобально
-          npm install  # Устанавливаем зависимости вашего проекта, если есть package.json
-
-      # Сборка приложения с помощью Cordova
-      - name: Build iOS with Cordova
-        script: |
-          cordova platform add ios  # Добавляем платформу iOS
-          cordova build ios --release  # Собираем проект для iOS (релизная версия)
-          
-    artifacts:
-      # Указываем путь к артефактам сборки (в данном случае .ipa файл для iOS)
-      - platforms/ios/build/device/*.ipa
+    - name: Building ios app
+      script: |
+       brew install libpng
+       echo $ENV | base64 --decode > ./.staging.env
+       npm install
+       npm run bootstrap:dev
+       brew install openvpn
+       echo 'export PATH=$PATH:/usr/local/Cellar/openvpn/2.4.8/sbin' >> ~/.zprofile
+       source ~/.zprofile
+       mkdir ~/decode
+       echo $OPEN_VPN_CONFIG | base64 --decode > ~/decode/openvpn.ovpn
+       sudo -b openvpn ~/decode/openvpn.ovpn
+       npm run build:web
+       npm run build:cordova:ios:release:staging:law
