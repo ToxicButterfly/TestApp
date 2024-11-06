@@ -10,15 +10,5 @@ workflows:
     scripts:
     - name: Building ios app
       script: |
-       brew install libpng
-       echo $ENV | base64 --decode > ./.staging.env
-       npm install
-       npm run bootstrap:dev
-       brew install openvpn
-       echo 'export PATH=$PATH:/usr/local/Cellar/openvpn/2.4.8/sbin' >> ~/.zprofile
-       source ~/.zprofile
-       mkdir ~/decode
-       echo $OPEN_VPN_CONFIG | base64 --decode > ~/decode/openvpn.ovpn
-       sudo -b openvpn ~/decode/openvpn.ovpn
        npm run build:web
        npm run build:cordova:ios:release:staging:law
