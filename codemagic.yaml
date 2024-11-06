@@ -1,14 +1,43 @@
 workflows:
-  vlaw-ios-staging:
-    name: vlaw ios staging
-    max_build_duration: 60
+  ios-workflow:
+    name: Build iOS Cordova App
+    instance_type: mac_pro
+    max_build_duration: 100
     environment:
-      node: 14.20.0
-      npm: 6.14.17
       groups:
-      - staging
+      - keystore_credentials
+      - app_store_credentials
+      vars:
+        GOOGLE_PLAY_TRACK: "beta"
+      flutter: stable
+      xcode: latest  # Версия Xcode, например, latest
+      cocoapods: 1.9.1
+      node: 16.20.0  # Версия Node.js
+      npm: 6.13.7
+      ndk: r21d
+    triggering:
+      events:
+        - push
+        - pull_request
+        - tag
+      branch_patterns:
+        - pattern: "*"
+          include: true
+        - pattern: develop
+          include: false
+        - pattern: feature-1
+          include: true
+          source: true
     scripts:
-    - name: Building ios app
-      script: |
-       npm run build:web
-       npm run build:cordova:ios:release:staging:law
+      # Установка Cordova и зависимостей
+      - name: Install Cordova and dependencies
+        script: |
+          npm install -g cordova  # Устанавливаем Cordova глобально
+          npm install  # Устанавливаем зависимости вашего проекта, если есть package.json
+
+      # Сборка приложения с помощью Cordova
+      - name: Build iOS with Cordova
+        script: |
+          cordova platform add ios  # Добавляем платформу iOS
+          cordova build ios --release  # Собираем проект для iOS (релизная версия)
+          
