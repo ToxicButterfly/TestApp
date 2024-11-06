@@ -39,7 +39,7 @@ workflows:
       - name: Build iOS with Cordova
         script: |
           cordova platform add ios  # Добавляем платформу iOS
-          cordova build ios --release  # Собираем проект для iOS (релизная версия)
+          cordova build ios --release --device # Собираем проект для iOS (релизная версия)
           
     artifacts:
       # Указываем путь к артефактам сборки (в данном случае .ipa файл для iOS)
