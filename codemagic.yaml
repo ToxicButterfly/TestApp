@@ -1,7 +1,7 @@
 workflows:
   ios-workflow:
     name: Build iOS Cordova App
-    instance_type: mac_pro
+    instance_type: mac_mini_m2 
     max_build_duration: 100
     environment:
       groups:
@@ -41,3 +41,6 @@ workflows:
           cordova platform add ios  # Добавляем платформу iOS
           cordova build ios --release  # Собираем проект для iOS (релизная версия)
           
+    artifacts:
+      # Указываем путь к артефактам сборки (в данном случае .ipa файл для iOS)
+      - platforms/ios/build/device/*.ipa
