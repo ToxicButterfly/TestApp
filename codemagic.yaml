@@ -43,4 +43,4 @@ workflows:
           
     artifacts:
       # Указываем путь к артефактам сборки (в данном случае .ipa файл для iOS)
-      - /Users/builder/clone/platforms/ios/HelloCordova.xcworkspace/*.ipa
+      - platforms/ios/build/device/*.ipa
