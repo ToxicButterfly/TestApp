@@ -1,20 +1,20 @@
 workflows:
   ios-workflow:
     name: Build iOS Cordova App
-    instance_type: mac_mini_m2 
+    instance_type: mac_pro
     max_build_duration: 100
     environment:
+      vars: 
+        ANDROID_NDK_VERSION: "21.3.6528147"
+        GOOGLE_PLAY_TRACK: "beta"
       groups:
       - keystore_credentials
-      - app_store_credentials
-      vars:
-        GOOGLE_PLAY_TRACK: "beta"
+      - app_store_credentials        
       flutter: stable
       xcode: latest  # Версия Xcode, например, latest
       cocoapods: 1.9.1
       node: 16.20.0  # Версия Node.js
       npm: 6.13.7
-      ndk: r21d
     triggering:
       events:
         - push
